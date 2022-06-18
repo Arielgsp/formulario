@@ -75,3 +75,23 @@ li{
     margin-left: 35px;
    
 }
+
+footer{
+    display: flex;
+    background-color: rgb(39, 26, 26);
+    height: 200px;
+    color: white;
+    padding-top: 15px;
+    justify-content: space-around;
+}
+
+footer ul li{
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 20px;
+    
+}
+
+footer ul li a{
+    color: white;
+}
