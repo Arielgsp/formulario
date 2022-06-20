@@ -4,38 +4,33 @@
     box-sizing: border-box;
 }
 
-section{
-    border: 1px solid black;
+nav{
     display: flex;
-    height: 70vh;
-    justify-content: center;
+    justify-content: space-between;
+    background-color: beige;
+    padding: 25px 0;
+    height: 8vh;
     align-items: center;
-    background-color: antiquewhite;
+    
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-}
-
-input{
-    margin-bottom: 15px;
-    background-color: rgb(222, 203, 240);
-}
-
-label{
-    margin-bottom: 5px;
-}
 picture{
     margin-left: 30px;
 }
 
-.boton{
-    margin: 10px auto auto auto;
-    padding: 5px 0;
-    width: 100px;
-    text-align: center;   
+.menu_li{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 30px;
     
+    }
+
+li{
+    margin-left: 35px;
+    
+   
 }
 
 .boton:hover{
@@ -46,6 +41,7 @@ a{
     text-decoration: none;
     color: black;
     padding: 10px;
+    
 }
 
 a:hover{
@@ -55,27 +51,47 @@ a:hover{
     
 }
 
-
-nav{
+section{
+    border: 1px solid black;
     display: flex;
-    justify-content: space-between;
-    background-color: beige;
-    padding: 25px 0;
-    height: 8vh;
-}
-
-.menu_li{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    margin-right: 30px;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 240, 238);
     
-    }
-
-li{
-    margin-left: 35px;
-   
 }
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 130px;
+    border: 1px solid black;
+    background-color: antiquewhite;
+    
+}
+
+input{
+    margin-bottom: 15px;
+    background-color: rgb(222, 203, 240);
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+
+.boton{
+    margin: 10px auto auto auto;
+    padding: 5px 0;
+    width: 100px;
+    text-align: center;   
+    
+}
+
+
+
+
+
 
 footer{
     display: flex;
@@ -95,4 +111,32 @@ footer ul li{
 
 footer ul li a{
     color: white;
+}
+
+
+
+@media(max-width: 715px){
+    nav{
+        background-color: red;
+    }
+    
+}
+
+@media (max-width: 450px){
+    form{
+        padding: 80px;
+        width: 100%;
+    }
+    body, section, form, footer{
+        width: 100vw;
+    }
+    
+}
+
+
+@media (max-height: 580px){
+    form{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
